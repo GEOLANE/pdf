@@ -1,5 +1,6 @@
 package pdf;
 import java.io.File;
+import java.net.URI;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
@@ -18,6 +19,10 @@ import org.apache.fop.apps.MimeConstants;
 
 public class PDFFromFOP {
   public static void main(String[] args) {
+	  File f = null;
+	  URI uri;
+	  
+	  
     try {
       File xmlfile = new File("resources\\organization.xml");
       File xsltfile = new File("resources\\organization3.xslt");
@@ -26,7 +31,10 @@ public class PDFFromFOP {
       File pdfFile = new File(pdfDir, "organization.pdf");
       System.out.println(pdfFile.getAbsolutePath());
       // configure fopFactory as desired
-      final FopFactory fopFactory = FopFactory.newInstance(new File(".").toURI());        
+      // create new File object
+      f = new File("resources\\fop.xconf");
+      uri = f.toURI();
+      final FopFactory fopFactory = FopFactory.newInstance(uri);        
       FOUserAgent foUserAgent = fopFactory.newFOUserAgent();
       // configure foUserAgent as desired        
       // Setup output
