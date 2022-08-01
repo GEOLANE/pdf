@@ -1,3 +1,21 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one or more
+ * contributor license agreements.  See the NOTICE file distributed with
+ * this work for additional information regarding copyright ownership.
+ * The ASF licenses this file to You under the Apache License, Version 2.0
+ * (the "License"); you may not use this file except in compliance with
+ * the License.  You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/* $Id: ExampleXML2PDF.java 1356646 2012-07-03 09:46:41Z mehdi $ */
 
 package pdf;
 
@@ -29,7 +47,7 @@ public class XML2PDF {
      */
     public static void main(String[] args) {
         try {
-            System.out.println("FOP ExampleXML2PDF\n");
+            System.out.println("FOP XML2PDF\n");
             System.out.println("Preparing...");
 
             // Setup directories
@@ -38,9 +56,9 @@ public class XML2PDF {
             outDir.mkdirs();
 
             // Setup input and output files
-            File xmlfile = new File(baseDir, "resources/projectteam.xml");
-            File xsltfile = new File(baseDir, "resources/projectteam2fo.xsl");
-            File pdffile = new File("C:/Users/haris/OneDrive/Desktop/ResultXML2PDF.pdf");
+            File xmlfile = new File("C:\\Users\\haris\\eclipse-workspace-spring\\pdf\\resources\\organization.xml");
+            File xsltfile = new File("C:\\Users\\haris\\eclipse-workspace-spring\\pdf\\resources\\organization.xsl");
+            File pdffile = new File("C:\\Users\\haris\\OneDrive\\Desktop\\ResultXML2PDF.pdf");
 
             System.out.println("Input: XML (" + xmlfile + ")");
             System.out.println("Stylesheet: " + xsltfile);
@@ -49,7 +67,11 @@ public class XML2PDF {
             System.out.println("Transforming...");
 
             // configure fopFactory as desired
-            final FopFactory fopFactory = FopFactory.newInstance(new File(".").toURI());
+            final FopFactory fopFactory = FopFactory.newInstance(new File( "C:\\Users\\haris\\eclipse-workspace-spring\\pdf\\resources\\fop.xconf" ));
+            
+            
+
+            
 
             FOUserAgent foUserAgent = fopFactory.newFOUserAgent();
             // configure foUserAgent as desired
