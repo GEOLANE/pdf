@@ -13,19 +13,20 @@
 	</classpathentry>
 	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
 		<attributes>
+			<attribute name="test" value="true"/>
 			<attribute name="optional" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="test" value="true"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry excluding="**" kind="src" output="target/test-classes" path="src/test/resources">
 		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
 			<attribute name="test" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7">
 		<attributes>
+			<attribute name="module" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
@@ -34,5 +35,35 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/33763/Desktop/pdf/lib/batik-anim-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/33763/Desktop/pdf/lib/batik-awt-util-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/33763/Desktop/pdf/lib/batik-bridge-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/33763/Desktop/pdf/lib/batik-constants-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/33763/Desktop/pdf/lib/batik-css-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/33763/Desktop/pdf/lib/batik-dom-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/33763/Desktop/pdf/lib/batik-ext-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/33763/Desktop/pdf/lib/batik-extension-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/33763/Desktop/pdf/lib/batik-gvt-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/33763/Desktop/pdf/lib/batik-i18n-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/33763/Desktop/pdf/lib/batik-parser-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/33763/Desktop/pdf/lib/batik-script-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/33763/Desktop/pdf/lib/batik-shared-resources-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/33763/Desktop/pdf/lib/batik-svg-dom-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/33763/Desktop/pdf/lib/batik-svggen-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/33763/Desktop/pdf/lib/batik-transcoder-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/33763/Desktop/pdf/lib/batik-util-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/33763/Desktop/pdf/lib/batik-xml-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/33763/Desktop/pdf/lib/commons-io-1.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/33763/Desktop/pdf/lib/commons-logging-1.0.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/33763/Desktop/pdf/lib/fontbox-2.0.24.jar"/>
+	<classpathentry kind="lib" path="C:/Users/33763/Desktop/pdf/lib/fop-core-2.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/33763/Desktop/pdf/lib/fop-events-2.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/33763/Desktop/pdf/lib/fop-util-2.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/33763/Desktop/pdf/lib/qdox-1.12.jar"/>
+	<classpathentry kind="lib" path="C:/Users/33763/Desktop/pdf/lib/serializer-2.7.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/33763/Desktop/pdf/lib/xalan-2.7.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/33763/Desktop/pdf/lib/xml-apis-1.4.01.jar"/>
+	<classpathentry kind="lib" path="C:/Users/33763/Desktop/pdf/lib/xml-apis-ext-1.3.04.jar"/>
+	<classpathentry kind="lib" path="C:/Users/33763/Desktop/pdf/lib/xmlgraphics-commons-2.7.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
