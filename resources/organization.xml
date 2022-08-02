@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<organization>
+  <orgname>XYZ Pvt. Ltd.</orgname>
+  <branch>
+    <name>XYZ software services</name>
+    <city>Bangalore</city>
+    <startdate>12/05/2002</startdate>
+  </branch>
+  <branch>
+    <name>XYZ financial services</name>
+    <city>New York City</city>
+    <startdate>10/04/1975</startdate>
+  </branch>
+  <branch>
+    <name>XYZ hardware services</name>
+    <city>Taipei</city>
+    <startdate>20/10/2004</startdate>
+  </branch>
+</organization>
