@@ -65,6 +65,8 @@ public class XML2PDF {
             System.out.println("Output: PDF (" + pdffile + ")");
             System.out.println();
             System.out.println("Transforming...");
+            
+           
 
             // configure fopFactory as desired
             final FopFactory fopFactory = FopFactory.newInstance(new File( "C:\\Users\\33763\\Desktop\\pdf\\resources\\fop.xconf" ));

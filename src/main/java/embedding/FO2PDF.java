@@ -1,22 +1,3 @@
-/*
- * Licensed to the Apache Software Foundation (ASF) under one or more
- * contributor license agreements.  See the NOTICE file distributed with
- * this work for additional information regarding copyright ownership.
- * The ASF licenses this file to You under the Apache License, Version 2.0
- * (the "License"); you may not use this file except in compliance with
- * the License.  You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
-/* $Id: ExampleFO2PDF.java 1804125 2017-08-04 14:15:05Z ssteiner $ */
-
 package embedding;
 
 // Java
@@ -41,34 +22,29 @@ import org.apache.fop.apps.FormattingResults;
 import org.apache.fop.apps.MimeConstants;
 import org.apache.fop.apps.PageSequenceResults;
 
-/**
- * This class demonstrates the conversion of an FO file to PDF using FOP.
- */
+
 public class FO2PDF {
 
-    // configure fopFactory as desired
-    private final FopFactory fopFactory = FopFactory.newInstance(new File(".").toURI());
-
-    /**
-     * Converts an FO file to a PDF file using FOP
-     * @param fo the FO file
-     * @param pdf the target PDF file
-     * @throws IOException In case of an I/O problem
-     * @throws FOPException In case of a FOP problem
-     */
     public void convertFO2PDF(File fo, File pdf) throws IOException, FOPException {
 
         OutputStream out = null;
 
         try {
-            FOUserAgent foUserAgent = fopFactory.newFOUserAgent();
-            // configure foUserAgent as desired
-
+    
+        	
             // Setup output stream.  Note: Using BufferedOutputStream
             // for performance reasons (helpful with FileOutputStreams).
             out = new FileOutputStream(pdf);
             out = new BufferedOutputStream(out);
+            
+                       
+         // configure fopFactory as desired
+            final FopFactory fopFactory = FopFactory.newInstance(new File("C:\\Users\\33763\\Desktop\\pdf\\resources\\fop.xconf"));
 
+                       
+
+            FOUserAgent foUserAgent = fopFactory.newFOUserAgent();
+            // configure foUserAgent as desired
             // Construct fop with desired output format
             Fop fop = fopFactory.newFop(MimeConstants.MIME_PDF, foUserAgent, out);
 
@@ -84,6 +60,7 @@ public class FO2PDF {
 
             // Start XSLT transformation and FOP processing
             transformer.transform(src, res);
+            
 
             // Result processing
             FormattingResults foResults = fop.getResults();
@@ -125,12 +102,11 @@ public class FO2PDF {
             //File fofile = new File(baseDir, "../fo/pagination/franklin_2pageseqs.fo");
             File pdffile = new File("C:\\Users\\33763\\Desktop\\ResultFO2PDF.pdf");
 
+
             System.out.println("Input: XSL-FO (" + fofile + ")");
             System.out.println("Output: PDF (" + pdffile + ")");
             System.out.println();
             System.out.println("Transforming...");
-            
-             
 
             FO2PDF app = new FO2PDF();
             app.convertFO2PDF(fofile, pdffile);

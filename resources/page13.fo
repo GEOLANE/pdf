@@ -1,0 +1,55 @@
+<fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
+
+<fo:layout-master-set margin="1.0in">
+
+<fo:simple-page-master master-name="LetterPage" page-width="28cm" page-height="28cm"    >
+
+<fo:region-body region-name="PageBody" font-family="karumbi" />
+
+</fo:simple-page-master>
+
+</fo:layout-master-set>
+
+<fo:page-sequence master-reference="LetterPage">
+
+<fo:flow flow-name="PageBody">
+
+<fo:block-container position = "absolute"  top="0pt" left="-70pt" >
+<fo:block >
+<fo:external-graphic src="url('file:c:///Users/33763/Desktop/photos/6.jpg')" content-width="21.0cm"   />
+</fo:block>
+</fo:block-container>
+
+<fo:block-container position = "absolute"  top="0pt" left="400pt" >
+<fo:block >
+<fo:external-graphic src="url('file:c:///Users/33763/Desktop/photos/12.jpg')" content-width="21.0cm"   />
+</fo:block>
+</fo:block-container>
+
+<fo:block-container position = "absolute"  top="420pt" left="0pt" >
+<fo:block >
+<fo:external-graphic src="url('file:c:///Users/33763/Desktop/photos/13.jpg')" content-width="17.0cm"   />
+</fo:block>
+</fo:block-container>
+
+<fo:block-container position = "absolute"  top="400pt" left="400pt" >
+<fo:block >
+<fo:external-graphic src="url('file:c:///Users/33763/Desktop/photos/10.jpg')" content-width="20.0cm"   />
+</fo:block>
+</fo:block-container>
+
+<fo:block line-height="0pt" margin-top=".70%" >
+<fo:instream-foreign-object   content-width="28cm"  >
+
+<svg id="Calque_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 822.05 822.05"><defs><style>.cls-1{fill:#fdf7f1;}</style></defs><g id="Calque_1-2"><path class="cls-1" d="M30.61,415.98H406.49v382.68H30.61V415.98Zm384.66,0h375.87v382.68H415.27V415.98ZM30.61,23.24H406.49V405.92H30.61V23.24Zm384.66,0h375.87V405.92H415.27V23.24ZM0,822.05H822.05V0H0V822.05Z"/></g></svg>
+
+
+</fo:instream-foreign-object>
+
+</fo:block>
+
+</fo:flow>
+
+</fo:page-sequence>
+
+</fo:root>

@@ -1,0 +1,32 @@
+<fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
+
+<fo:layout-master-set margin="1.0in">
+
+<fo:simple-page-master master-name="LetterPage" page-width="28cm" page-height="28cm"    >
+
+<fo:region-body region-name="PageBody" font-family="karumbi" />
+
+</fo:simple-page-master>
+
+</fo:layout-master-set>
+
+<fo:page-sequence master-reference="LetterPage">
+
+<fo:flow flow-name="PageBody">
+
+
+
+<fo:block-container position = "absolute" top = "0pt" left="-200pt" >
+<fo:block >
+<fo:external-graphic src="url('file:c:///Users/33763/Desktop/photos/6.jpg')" content-width="42.0cm"  />
+</fo:block>
+</fo:block-container>
+
+
+
+</fo:flow>
+
+</fo:page-sequence>
+
+
+</fo:root>
